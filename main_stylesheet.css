@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-03 17:20:43
+* @Last Modified time: 2023-03-05 19:23:08
 */
 
 body {
@@ -28,6 +28,10 @@ header {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    gap: 250px;
     padding: 50px;
 }
 
