@@ -1,0 +1,30 @@
+/*
+* @Author: ArthurBernard
+* @Date:   2023-03-08 16:50:38
+* @Last Modified by:   ArthurBernard
+* @Last Modified time: 2023-03-08 17:27:13
+*/
+
+.nav {
+    padding-right: 6rem;
+    text-align: right;
+}
+
+.nav__link {
+    display: inline;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+a {
+    color: black;
+}
+
+.container {
+    background-color: blue;
+    color: white;
+}
+
+.container--red {
+    background-color: red;
+}
