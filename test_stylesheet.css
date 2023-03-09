@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-08 17:27:13
+* @Last Modified time: 2023-03-09 09:00:00
 */
 
 .nav {
@@ -20,6 +20,25 @@ a {
     color: black;
 }
 
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.contact {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: yellow;
+}
+
+.resume-title {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    background-color: green;
+}
+
 .container {
     background-color: blue;
     color: white;
@@ -27,4 +46,18 @@ a {
 
 .container--red {
     background-color: red;
+}
+
+.experience {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+
+.education {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+}
+
+.box {
+    height: 5rem;
 }
