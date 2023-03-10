@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-10 08:24:33
+* @Last Modified time: 2023-03-10 08:56:46
 */
 
 .nav {
@@ -13,6 +13,7 @@
     border-radius: 5px 30px 5px 30px;
     box-shadow: -2px 6px 3px black;
     margin-bottom: 2rem;
+    /*position: sticky;*/
 }
 
 .nav__link {
@@ -22,28 +23,41 @@
     padding-left: 1rem;
 }
 
-a {
+/*For `a` included in `nav__link`*/
+.nav__link a {
     color: white;
     text-decoration: none;
 }
 
+/*Two columns resume*/
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
 }
 
 .contact {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
+    grid-column: 1;
+    grid-row: 1;
     background-color: yellow;
 }
 
 .resume-title {
-    grid-column: 3 / 6;
-    grid-row: 1 / 2;
+    grid-column: 2;
+    grid-row: 1;
     background-color: green;
+}
+
+.side-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr;
+}
+
+.side-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .container {
@@ -56,23 +70,23 @@ a {
 }
 
 .experience {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
+    grid-row: 1;
 }
 
 .education {
-    grid-column: 2 / 4;
-    grid-row: 3 / 4;
+    grid-row: 2;
+}
+
+.personnal-projects {
+    grid-row: 3;
 }
 
 .key-skill {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 1;
 }
 
 .programming {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    grid-row: 2;
 }
 
 .box {
