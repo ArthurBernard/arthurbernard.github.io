@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-11 07:39:19
+* @Last Modified time: 2023-03-13 03:47:22
 */
 
 .nav {
@@ -31,10 +31,13 @@
 
 /*Two columns resume*/
 .main {
+    padding: 1rem;
+    margin: 1rem 6rem 1rem 6rem;
+    background-color: pink;
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 1fr;
-    gap: 5px;
+    gap: 0.5rem;
 }
 
 .contact {
@@ -43,10 +46,36 @@
     background-color: yellow;
 }
 
-.resume-title {
+.resume-header {
     grid-column: 2;
     grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     background-color: green;
+}
+
+.resume-header__title {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: purple;
+    padding-left: 1rem;
+}
+
+.resume-header__name {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: red;
+    padding-left: 1rem;
+}
+
+.resume-header__picture {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background-color: white;
+    border: 2px solid blue;
+    padding: 2px;
+    margin: auto;
 }
 
 .side-left {
