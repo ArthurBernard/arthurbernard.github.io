@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-14 14:02:05
+* @Last Modified time: 2023-03-14 14:21:32
 */
 
 .nav {
@@ -118,20 +118,20 @@ h3 {
     margin: 0.2rem;
 }
 
-.side-right .container li {
+.field {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    background-color: green;
 }
 
-.side-right .container li .date {
+.field__date {
     grid-column: 1;
     grid-row: 1 / 3;
     font-size: 0.9rem;
-    margin: 0rem 1rem 0rem -1rem;
 }
 
-.side-right .container li .title {
+.field__title {
     grid-column: 2;
     grid-row: 1;
     text-align: left;
@@ -140,7 +140,7 @@ h3 {
     color: blue;
 }
 
-.side-right .container li .place {
+.field__place {
     grid-column: 2;
     grid-row: 1;
     text-align: right;
@@ -148,10 +148,11 @@ h3 {
     font-style: italic;
 }
 
-.side-right .container li .description {
+.field__description {
     grid-column: 2;
     grid-row: 2;
     text-align: justify;
+    margin-top: 0.1rem;
 }
 
 .container--red {
