@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-13 03:47:22
+* @Last Modified time: 2023-03-14 09:18:55
 */
 
 .nav {
@@ -44,6 +44,11 @@
     grid-column: 1;
     grid-row: 1;
     background-color: yellow;
+    padding: 1rem;
+}
+
+.contact li {
+    margin: 0.5rem;
 }
 
 .resume-header {
@@ -82,8 +87,20 @@
     grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-template-columns: 1fr;
+    margin-top: 0rem;
+    background-color: skyblue;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+.side-left h3 {
+    border: 3px solid blue;
+    box-shadow: 3px 3px 0px black;
+    text-align: center;
 }
 
 .side-right {
@@ -95,10 +112,39 @@
 }
 
 .container {
-    background-color: blue;
-    color: white;
-    padding: 1rem;
+    background-color: orange;
+    color: black;
+    padding: 0rem 1rem 0rem 1rem;
     margin: 0.2rem;
+}
+
+.side-right .container li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+}
+
+.side-right .container li .date {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.side-right .container li .title {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+}
+
+.side-right .container li .place {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+}
+
+.side-right .container li .description {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: justify;
 }
 
 .container--red {
@@ -124,6 +170,14 @@
 
 .programming {
     grid-row: 2;
+}
+
+.mooc {
+    grid-row: 3;
+}
+
+.interests {
+    grid-row: 4;
 }
 
 .box {
