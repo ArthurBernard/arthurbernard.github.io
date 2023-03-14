@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-14 09:18:55
+* @Last Modified time: 2023-03-14 14:02:05
 */
 
 .nav {
@@ -121,29 +121,36 @@ h3 {
 .side-right .container li {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .side-right .container li .date {
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / 3;
+    font-size: 0.9rem;
+    margin: 0rem 1rem 0rem -1rem;
 }
 
 .side-right .container li .title {
     grid-column: 2;
     grid-row: 1;
     text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: blue;
 }
 
 .side-right .container li .place {
     grid-column: 2;
     grid-row: 1;
     text-align: right;
+    font-size: 0.8 rem;
+    font-style: italic;
 }
 
 .side-right .container li .description {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     text-align: justify;
 }
 
