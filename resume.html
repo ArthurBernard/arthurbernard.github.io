@@ -6,6 +6,16 @@
         <meta name="Keywords" content="resume, cv, Arthur, Bernard">
         <meta name="Description" content="resume">
         <title>Resume</title>
+
+        <!-- CSS style sheets -->
+        <link href="main_stylesheet.css" rel="stylesheet">
+        <link href="resume_stylesheet.css" rel="stylesheet">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
@@ -15,42 +25,99 @@
             <p>My First Website !</p>
         </header>
 
-        <nav class="banner">
+        <nav class="nav sticky">
             <ul>
-                <span><a class=banner_button href="./index.html">Home</a></span>
-                <span><a class=banner_button href="https://github.com/ArthurBernard" target="_blank">GitHub</a></span>
-                <span><a class=banner_button href="./about.html">About me</a></span>
-                <span><a class=banner_button href="./test.html">Test sheet</a></span>
+                <li class=nav__link><a href="./index.html">Home</a></li>
+                <li class=nav__link><a href="https://github.com/ArthurBernard" target="_blank">GitHub</a></li>
+                <li class=nav__link><a href="./about.html">About me</a></li>
+                <li class=nav__link><a href="./test.html">Test page</a></li>
             </ul>
         </nav>
 
-        <main>
-            <section>
-                <h1>Arthur Bernard</h1>
-                <h2>Data Scientist and Developer</h2>
-                <ul>
-                    <li>+33 6 59 29 14 50</li>
-                    <li>arthur.bernard.92@gmail.com</li>
-                    <li>/in/arthur-bernard-789955152</li>
-                    <li>/GitHub/ArthurBernard</li>
-                </ul>
+        <main class="main">
+                <div class='resume-header'>
+                    <h1 class="resume-header__name">Arthur Bernard</h1>
+                    <h2 class="resume-header__title">Data Scientist and Developer</h2>
+                    <img class="resume-header__picture" src="./pictures/qrcode_github_mini.jpeg" alt="Resume picture" title="Resume picture">
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>+33 6 59 29 14 50</li>
+                        <li>arthur.bernard.92@gmail.com</li>
+                        <li>/in/arthur-bernard-789955152</li>
+                        <li>/GitHub/ArthurBernard</li>
+                    </ul>
+                </div>
 
-            <section>
-                <h3>Experiences</h3>
-                <h4>Data Scientist Consultant</h4>
-            </section>
+            <div class="side-right">
+                <section class="container experience">
+                    <h3>Experiences</h3>
+                    <div class="field">
+                        <span class="field__title">Data Scientist</span><span class="field__date">Mar. 2020 - Sep. 2021</span><span class="field__place">at Coperneec, Paris</span><p class="field__description">For Natixis in Risk Management Department in the Market Stress Test team: automation of recurent tasks, R&D on reverse stress test methodology, fast pricing of products, python package to manage data across different internal data sources, etc.</p>
+                    </div>
+                    <div class="field">
+                        <span class="field__title">Quant Research</span><span class="field__date">Jan. 2019 - Oct. 2019</span><span class="field__place">at Napoleaon Group, Paris</span><p class="field__description">R&D of trading strategies, multivariate prediction with neural networds, execution order algorithms, development of backtesting and financial analysis tools, and webscraping data.</p>
+                    </div>
+                </section>
 
-            <section>
-                <h3>Personal projects</h3>
-            </section>
+                <section class="container education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Data Scientist</li>
+                        <ul>
+                            <li>Desciption</li>
+                            <li>Date</li>
+                        </ul>
+                    </ul>
+                </section>
 
-            <section>
-                <h3>Education</h3>
-            </section>
+                <section class="container personnal-projects">
+                    <h3>Personnal projects</h3>
+                    <div class="field">
+                        <span class="field__title">Machine/deep learning tools adapted to finance</span><span class="field__date">2018 - 2019</span><p class="field__description">Development of a Pythn and Cython package to create neural networks, backest strategies, analysis with econometric models and financial indicators, etc. Published on PyPI as <a href="https://github.com/ArthurBernard/Fynance">fynance</a>.</p>
+                    </div>
+                </section>
+            </div>
 
-            <section>
-                <h3>Miscellaneous</h3>
-            </section> 
+            <div class="side-left">
+                <section class="container key-skill">
+                    <h3>Key skills</h3>
+                    <ul>
+                        <li>Proficiency in statistics & econometrics softwares: R (Advanced), Octave/Matlab (Advanced), SAS (Beginner), STATA (Beginner).</li>
+                        <li>Operating systems: Unix and Windows</li>
+                        <li>Languages: French (native speaker), English (professional level).</li>
+                        <li>Databases: Basic knowledged of SQL, MDX and Hadoop.</li>
+                    </ul>
+                </section>
+
+                <section class="container programming">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Higly advanced: Python (expertise in NumPy, Pandas, Cython, PyTorch, Keras, Sickit-Learn, Asyncio, Mullti-process/thread, etc).</li>
+                        <li>Advanced: Shell, VBA, LaTeX.</li>
+                        <li>In progress: C++, HTML, CSS and JavaScript.</li>
+                    </ul>
+                </section>
+
+                <section class="container mooc">
+                    <h3>MOOC's</h3>
+                    <ul>
+                        <li>Learn to program with Python, on OpenClassRooms.</li>
+                        <li>Machine Learning, Stanford University course by Andrew Ng, on Coursera.</li>
+                        <li>And other diverse courses about Linux, C++, HTML & CSS, JavaScript, etc.</li>
+                    </ul>
+                </section>
+
+                <section class="container interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Artificial intelligence.</li>
+                        <li>Programming.</li>
+                        <li>Crypto-currencies/Blockchains.</li>
+                        <li>Open source projects.</li>
+                    </ul>
+                </section>
+            </div>
         </main>
     </body>
 </html>
