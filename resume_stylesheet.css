@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-17 07:26:52
+* @Last Modified time: 2023-03-20 10:30:00
 */
 
 /*Two columns resume*/
@@ -67,6 +67,14 @@ h3 {
     font-size: 1.6rem;
 }
 
+h2 {
+    color: rgb(139, 179, 177);
+}
+
+h3, p, li {
+    color: black;
+}
+
 .side-left h3 {
     border: 3px solid rgb(139, 179, 177);
     box-shadow: 3px 3px 0px black;
@@ -77,7 +85,7 @@ h3 {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
 }
 
@@ -127,13 +135,16 @@ h3 {
     grid-row: 1;
 }
 
-.education {
+.personnal-projects {
     grid-row: 2;
 }
 
-.personnal-projects {
+.education {
     grid-row: 3;
-    color: black;
+}
+
+.miscellaneous {
+    grid-row: 4;
 }
 
 .key-skill {
