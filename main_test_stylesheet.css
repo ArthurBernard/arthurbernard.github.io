@@ -1,0 +1,223 @@
+/*
+* @Author: ArthurBernard
+* @Date:   2023-03-01 19:16:37
+* @Last Modified by:   ArthurBernard
+* @Last Modified time: 2023-03-23 11:47:41
+*/
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1602287389013-cb4321544a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    /*background: url("https://images.unsplash.com/photo-1602287389013-cb4321544a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") fixed cover bottom;*/
+    padding: 0px;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0px 10px 100px;
+    margin: 0;
+    height: 50px;
+    background-color: pink;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0px 10px 100px;
+    margin: 0;
+    height: 50px;
+    background-color: green;
+}
+
+nav {
+    height: 50px;
+    margin: auto;
+    padding: 0px;
+}
+
+main {
+    /*width: 75%;*/
+    margin: auto;
+    border: solid black 5px;
+}
+
+table {
+    border-collapse: collapse;
+    caption-side: bottom;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+h1 {
+    color: #A5B4FC;
+    font-size: 3em;
+    font-family: 'Ubuntu Mono', monospace;
+    text-shadow: -1px 3px 3px RGB(0, 0, 0);
+    margin: auto;
+}
+
+h2 {
+    color: orange;
+    font-size: 2em;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+h3, p, li {
+    color: yellow;
+    font-size: 1.1em;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    width: 75%;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+a:focus {
+    color: blue;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    text-decoration: none;
+}
+
+.my_name {
+    color: blue;
+    font-weight: 700;
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    gap: 250px;
+
+    background: linear-gradient(90deg, #4B79A1, #283E51);
+    border: solid black 5px;
+    border-radius: 5px 30px 5px 30px;
+    box-shadow: -2px 6px 3px black;
+    opacity: 0.4;
+    color: white;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Ubuntu Mono', monospace;
+
+    margin: 20px;
+    padding: 0px;
+    height: 50px;
+}
+
+.banner_button {
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: pink;
+}
+
+.banner2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(90deg, #4B79A1, #283E51);
+    border: solid black 5px;
+    border-radius: 5px 30px 5px 30px;
+    box-shadow: -2px 6px 3px black;
+    opacity: 0.4;
+    color: white;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 20px;
+    padding: 0px 20px 20px 0px;
+    height: 50px;
+    /*width: 90%;*/
+}
+
+.banner_button2 {
+    color: white;
+    text-decoration: none;
+    /*height: 20px;
+    margin: 20px;*/
+    margin: auto;
+    /*width: 500px;*/
+    /*opacity: 1;*/
+    padding: 0px 30px 0px 0px;
+}
+
+.banner_button:hover {
+    /*background-color: black*/;
+    text-shadow: -2px 6px 3px black;
+    color: white;
+    opacity: 0.8;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#my_id {
+    color: pink;
+    font-size: 0.8em;
+}
+
+/* A B {...} // Aplly to B if B in A*/
+
+/* A + B {...} // Apply to B if B is after A*/
+
+/* A[c] {...} // Apply to A if A has c attribute */
+
+/* A[c=value] {..} // Apply to A if A has c attribute with a specified value */
+
+
+/*===============*/
+/* New from test */
+/*===============*/
+
+.nav {
+    padding-right: 6rem;
+    text-align: right;
+    background: linear-gradient(90deg, #4B79A1, #283E51);
+    border: solid black 5px;
+    border-radius: 5px 30px 5px 30px;
+    box-shadow: -2px 6px 3px black;
+    margin-bottom: 2rem;
+    /*position: sticky;*/
+}
+
+.nav__link {
+    display: inline;
+    font-size: 1.4em;
+    font-style: italic;
+    padding-left: 1rem;
+}
+
+/*For `a` included in `nav__link`*/
+.nav__link a {
+    color: white;
+    text-decoration: none;
+}
+
