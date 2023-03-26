@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-23 12:10:35
+* @Last Modified time: 2023-03-26 11:30:33
 */
 
 /*Two columns resume*/
@@ -10,7 +10,7 @@
     padding: 1rem;
     margin: 1rem 6rem 1rem 6rem;
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: 1fr;
     gap: 0.5rem;
 }
@@ -30,7 +30,7 @@
     grid-row: 1;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 }
 
 .resume-header__title {
@@ -43,6 +43,7 @@
     grid-column: 1;
     grid-row: 1;
     padding-left: 1rem;
+    margin-left: 0;
 }
 
 .resume-header__picture {
@@ -63,6 +64,7 @@
     grid-template-columns: 1fr;
     margin-top: 0rem;
     background-color: rgba(152, 188, 188, 0.5);
+    font-size: 1rem;
 }
 
 h3 {
@@ -81,6 +83,7 @@ h3, p, li {
     border: 3px solid rgb(139, 179, 177);
     box-shadow: 3px 3px 0px black;
     text-align: center;
+    margin: auto;
 }
 
 .side-right {
@@ -92,6 +95,7 @@ h3, p, li {
     grid-template-columns: 1fr;
     height: 70rem;
     background-color: pink;
+    font-size: 0.9rem;
 }
 
 .container {
@@ -100,10 +104,22 @@ h3, p, li {
     margin: 0.2rem;
 }
 
+.container ul {
+    padding: 0rem;
+    margin-left: 0.5rem;
+}
+
+.container li {
+    padding: 0rem;
+    margin: 0.5rem;
+    width: 100%;
+}
+
 .field {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    margin-bottom: 0.5rem;
 }
 
 .field__date {
