@@ -1,50 +1,23 @@
 /*
 * @Author: ArthurBernard
-* @Date:   2023-03-08 16:50:38
+* @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-27 08:32:05
+* @Last Modified time: 2023-03-26 11:30:33
 */
-
-.nav {
-    padding-right: 6rem;
-    text-align: right;
-    background: linear-gradient(90deg, #4B79A1, #283E51);
-    border: solid black 5px;
-    border-radius: 5px 30px 5px 30px;
-    box-shadow: -2px 6px 3px black;
-    margin-bottom: 2rem;
-    /*position: sticky;*/
-}
-
-.nav__link {
-    display: inline;
-    font-size: 1.4em;
-    font-style: italic;
-    padding-left: 1rem;
-}
-
-/*For `a` included in `nav__link`*/
-.nav__link a {
-    color: white;
-    text-decoration: none;
-}
 
 /*Two columns resume*/
 .main {
     padding: 1rem;
     margin: 1rem 6rem 1rem 6rem;
-    background-color: pink;
     display: grid;
     grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr;
     gap: 0.5rem;
-    height: 100rem;
 }
 
 .contact {
     grid-column: 1;
     grid-row: 1;
-    background-color: yellow;
     padding: 1rem;
 }
 
@@ -58,20 +31,17 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
-    background-color: green;
 }
 
 .resume-header__title {
     grid-column: 1;
     grid-row: 2;
-    background-color: purple;
     padding-left: 1rem;
 }
 
 .resume-header__name {
     grid-column: 1;
     grid-row: 1;
-    background-color: red;
     padding-left: 1rem;
     margin-left: 0;
 }
@@ -79,8 +49,7 @@
 .resume-header__picture {
     grid-column: 2;
     grid-row: 1 / 3;
-    background-color: white;
-    border: 2px solid blue;
+    border: 2px solid rgb(139, 179, 177);
     padding: 2px;
     margin: auto;
 }
@@ -89,24 +58,32 @@
     grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr ;*/
+    /*grid-template-rows: 350px 250px 250px 150px;*/
+    grid-template-rows: 20em 15em 15em 10em;
     grid-template-columns: 1fr;
     margin-top: 0rem;
-    background-color: skyblue;
+    background-color: rgba(152, 188, 188, 0.5);
     font-size: 1rem;
-    height: 80rem;
 }
 
 h3 {
     font-size: 1.6rem;
 }
 
+h2 {
+    color: rgb(139, 179, 177);
+}
+
+h3, p, li {
+    color: black;
+}
+
 .side-left h3 {
-    border: 3px solid blue;
+    border: 3px solid rgb(139, 179, 177);
     box-shadow: 3px 3px 0px black;
     text-align: center;
     margin: auto;
-    padding: 0rem;
 }
 
 .side-right {
@@ -114,27 +91,25 @@ h3 {
     grid-row: 2;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 30rem 30rem 30rem 30rem;*/
     grid-template-columns: 1fr;
+    height: 70rem;
+    background-color: pink;
     font-size: 0.9rem;
-    height: 80rem;
 }
 
 .container {
-    background-color: orange;
     color: black;
     padding: 0rem 1rem 0rem 1rem;
     margin: 0.2rem;
-    height: 50%;
 }
 
 .container ul {
-    background-color: pink;
     padding: 0rem;
     margin-left: 0.5rem;
 }
 
 .container li {
-    background-color: white;
     padding: 0rem;
     margin: 0.5rem;
     width: 100%;
@@ -144,9 +119,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
-    background-color: green;
     margin-bottom: 0.5rem;
-    height: 23%;
 }
 
 .field__date {
@@ -179,21 +152,20 @@ h3 {
     margin-top: 0.1rem;
 }
 
-.container--red {
-    background-color: red;
-}
-
 .experience {
     grid-row: 1;
 }
 
-.education {
+.personnal-projects {
     grid-row: 2;
 }
 
-.personnal-projects {
+.education {
     grid-row: 3;
-    color: black;
+}
+
+.miscellaneous {
+    grid-row: 4;
 }
 
 .key-skill {
@@ -210,8 +182,4 @@ h3 {
 
 .interests {
     grid-row: 4;
-}
-
-.box {
-    height: 5rem;
 }
