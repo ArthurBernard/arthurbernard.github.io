@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-26 11:30:33
+* @Last Modified time: 2023-03-28 08:54:09
 */
 
 /*Two columns resume*/
@@ -10,9 +10,11 @@
     padding: 1rem;
     margin: 1rem 6rem 1rem 6rem;
     display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 5fr;
+    grid-template-rows: 1fr 8fr;
     gap: 0.5rem;
+    background-color: white;
+    border: solid black 2px;
 }
 
 .contact {
@@ -60,7 +62,8 @@
     display: grid;
     /*grid-template-rows: 1fr 1fr 1fr 1fr ;*/
     /*grid-template-rows: 350px 250px 250px 150px;*/
-    grid-template-rows: 20em 15em 15em 10em;
+    /*grid-template-rows: 20em 15em 15em 10em;*/
+    grid-template-rows: 21rem 21rem 21rem 21rem;
     grid-template-columns: 1fr;
     margin-top: 0rem;
     background-color: rgba(152, 188, 188, 0.5);
@@ -68,7 +71,7 @@
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 h2 {
@@ -90,12 +93,14 @@ h3, p, li {
     grid-column: 2;
     grid-row: 2;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    /*grid-template-rows: 30rem 30rem 30rem 30rem;*/
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-rows: 21rem 21rem 21rem 21rem;
     grid-template-columns: 1fr;
-    height: 70rem;
-    background-color: pink;
     font-size: 0.9rem;
+}
+
+.side-right h3 {
+    margin: 0rem 0rem 0.5rem 0rem;
 }
 
 .container {
@@ -120,6 +125,7 @@ h3, p, li {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     margin-bottom: 0.5rem;
+    height: 6rem;
 }
 
 .field__date {
