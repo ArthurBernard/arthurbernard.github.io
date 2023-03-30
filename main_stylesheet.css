@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-24 12:19:06
+* @Last Modified time: 2023-03-30 20:01:45
 */
 
 body {
@@ -84,8 +84,9 @@ h3, p, li {
 }
 
 a {
-    color: yellow;
+    color: rgba(152, 188, 188, 0.5);;
     text-decoration: none;
+    font-style: italic;
 }
 
 a:hover{
