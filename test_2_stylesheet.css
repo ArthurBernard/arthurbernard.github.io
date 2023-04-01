@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-31 19:13:26
+* @Last Modified time: 2023-04-01 08:45:19
 */
 
 /*Two columns resume*/
@@ -17,6 +17,7 @@
     width: 85%;
     margin: auto;
     border: solid black 2px;
+    height: 100rem;
 }
 
 .contact {
@@ -203,5 +204,13 @@ h3, p, li {
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.2em;
+}
+
+.download__button:hover {
+    text-decoration: underline;
+    text-shadow: -2px 6px 3px black;
+    color: white;
+    opacity: 0.8;
+
 }
 
