@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-03 11:25:21
+* @Last Modified time: 2023-04-03 18:43:16
 */
 
 /*Two columns resume*/
@@ -226,7 +226,6 @@ a {
 }
 
 .download__button:hover {
-    text-decoration: underline;
     text-shadow: -2px 6px 3px #4d4d4d;
     color: #1a4c70;
     opacity: 0.8;

@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-30 20:01:45
+* @Last Modified time: 2023-04-03 18:43:56
 */
 
 body {
@@ -221,3 +221,20 @@ a:active {
     text-decoration: none;
 }
 
+.nav__link a:hover{
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #E7E7E7;
+    opacity: 0.8;
+}
+
+.nav__link a:focus {
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #E7E7E7;
+    opacity: 0.8;
+}
+
+.nav__link a:active {
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #1a4c70;
+    opacity: 1;
+}
