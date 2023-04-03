@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-01 09:11:01
+* @Last Modified time: 2023-04-03 10:43:11
 */
 
 /*Two columns resume*/
@@ -22,11 +22,26 @@
 .contact {
     grid-column: 1;
     grid-row: 1;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin: 0rem;
+    font-size: 0.9rem;
 }
 
 .contact li {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    list-style-type: none;
+    padding: 0rem;
+}
+
+.contact a {
+    font-style: normal;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #1a4c70;
 }
 
 .resume-header {
