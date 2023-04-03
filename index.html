@@ -2,8 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Hello World !</title>
+        <meta name="author" content="ArthurBernard">
+        <meta name="Keywords" content="website, Arthur, Bernard">
+        <meta name="Description" content="index">
+        <title>Home</title>
+
+        <!-- CSS style sheets -->
         <link href="main_stylesheet.css" rel="stylesheet">
+
+        <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -17,13 +24,13 @@
             <p>My First Website !</p>
         </header>
 
-        <nav class="banner">
+        <nav class="nav sticky">
             <ul>
-                <li><a class=banner_button href="./about.html">About me</a></li>
-                <li><a class=banner_button href="https://github.com/ArthurBernard" target="_blank">My GitHub account</a></li>
-                <li><a class=banner_button href=./resume.html>Resume</a></li>
-                <span><a class=banner_button href="./test.html">Test sheet</a></span>
-                <span><a class=banner_button href="./test_2.html">Test 2 page</a></span>
+                <li class=nav__link><a href="https://github.com/ArthurBernard" target="_blank">GitHub</a></li>
+                <li class=nav__link><a href="./about.html">About me</a></li>
+                <li class="nav__link"><a href=./resume.html>Resume</a></li>
+                <li class=nav__link><a href="./test.html">Test page</a></li>
+                <li class=nav__link><a href="./test_2.html">Test 2 page</a></li>
             </ul>
         </nav>
 
