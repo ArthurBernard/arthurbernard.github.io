@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-03-30 20:01:58
+* @Last Modified time: 2023-04-04 18:26:15
 */
 
 body {
@@ -48,7 +48,6 @@ nav {
 main {
     width: 85%;
     margin: auto;
-    border: solid black 5px;
 }
 
 table {

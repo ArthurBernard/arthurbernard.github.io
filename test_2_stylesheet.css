@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-04 11:28:41
+* @Last Modified time: 2023-04-04 12:08:39
 */
 
 /*Two columns resume*/
@@ -15,7 +15,7 @@
     grid-gap: 0.5rem;
     background-color: white;
     border: solid black 2px;
-    width: 85%;
+    /*width: 85%;*/
     /*height: 100rem;*/
 }
 
