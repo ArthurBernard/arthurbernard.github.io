@@ -2,15 +2,26 @@
 * @Author: ArthurBernard
 * @Date:   2023-04-07 12:28:53
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-07 12:34:33
+* @Last Modified time: 2023-04-09 10:57:08
 */
+
+.disclaimer {
+  background-color: #333;
+  border: 1px solid #555;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #bbb;
+  /*width: x;*/
+}
 
 blockquote {
   font-style: italic;
   padding: 20px;
   background-color: #333;
   border-left: 5px solid #4CAF50;
-  margin: 0;
+  width: 71%;
+  /*width: x - 20px;*/
 }
 
 blockquote p {
@@ -18,6 +29,8 @@ blockquote p {
   line-height: 1.5;
   margin: 0;
   color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 blockquote cite {
@@ -26,3 +39,4 @@ blockquote cite {
   margin-top: 10px;
   color: #ccc;
 }
+
