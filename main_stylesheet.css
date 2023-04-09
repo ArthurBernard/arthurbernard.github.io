@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-07 10:47:59
+* @Last Modified time: 2023-04-09 10:35:18
 */
 
 body {
@@ -25,7 +25,7 @@ header {
     padding: 10px 0px 10px 100px;
     margin: 0;
     height: 50px;
-    background-color: pink;
+    /*background-color: pink;*/
 }
 
 footer {
@@ -154,6 +154,7 @@ a:active {
 .nav__link a {
     color: white;
     text-decoration: none;
+    font-style: normal;
 }
 
 .nav__link a:hover{
@@ -175,6 +176,6 @@ a:active {
 }
 
 .nav__link--selected {
-    font-style: normal;
+    font-style: italic;
     text-decoration: underline;
 }
