@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-09 10:35:18
+* @Last Modified time: 2023-04-12 00:31:49
 */
 
 body {
@@ -31,12 +31,31 @@ header {
 footer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 10px 0px 10px 100px;
-    margin: 0;
-    height: 50px;
+    margin: 2rem;
+    gap: 10rem;
+    /*padding: 0 10rem 0 10rem;*/
+    /*height: 50px;*/
     background-color: green;
+}
+
+footer .contact {
+    background-color: yellow;
+    padding: 0;
+    margin: 0;
+}
+
+footer .social-media {
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+}
+
+footer h3 {
+    margin: 0;
+    padding: auto;
+    background-color: white;
 }
 
 nav {
@@ -52,13 +71,13 @@ main {
     margin: auto;
 }
 
-table {
+table { /* to remove */
     border-collapse: collapse;
     caption-side: bottom;
     margin: auto;
 }
 
-td, th {
+td, th { /* to remove */
     border: 1px solid black;
     padding: 15px;
 }
@@ -104,7 +123,7 @@ a:active {
     text-decoration: none;
 }
 
-.my_name {
+.my_name { /* to remove */
     color: blue;
     font-weight: 700;
 }
@@ -113,7 +132,7 @@ a:active {
     font-style: italic;
 }
 
-#my_id {
+#my_id { /* to remove */
     color: pink;
     font-size: 0.8em;
 }
@@ -131,7 +150,7 @@ a:active {
 /* New from test */
 /*===============*/
 
-.nav {
+.nav { /* duplicated ? */
     padding-right: 6rem;
     text-align: right;
     background: linear-gradient(90deg, #4B79A1, #283E51);
