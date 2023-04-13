@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-04 18:26:15
+* @Last Modified time: 2023-04-13 16:13:59
 */
 
 body {
@@ -14,7 +14,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     /*background: url("https://images.unsplash.com/photo-1602287389013-cb4321544a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") fixed cover bottom;*/
     padding: 0px;
-    margin: 10px;
+    margin: 0px;
 }
 
 header {
@@ -27,7 +27,7 @@ header {
     height: 50px;
     background-color: pink;
 }
-
+/*
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -37,6 +37,64 @@ footer {
     margin: 0;
     height: 50px;
     background-color: green;
+}
+*/
+.footer {
+    background-image: none;
+    background-color: #2E3440;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/*.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}*/
+
+.footer ul li {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+.footer a:hover {
+    color: #0077cc;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.footer-copyright p {
+    text-align: center;
+    width: 100%;
+    color: white;
 }
 
 nav {
