@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-12 00:31:49
+* @Last Modified time: 2023-04-13 19:28:22
 */
 
 body {
@@ -14,7 +14,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     /*background: url("https://images.unsplash.com/photo-1602287389013-cb4321544a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") fixed cover bottom;*/
     padding: 0px;
-    margin: 10px;
+    margin: 0px;
 }
 
 header {
@@ -28,34 +28,73 @@ header {
     /*background-color: pink;*/
 }
 
-footer {
+.footer {
+    background-image: none;
+    background-color: #2E3440;
+    color: white;
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 0;
+}
+
+.footer-container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    gap: 10rem;
-    /*padding: 0 10rem 0 10rem;*/
-    /*height: 50px;*/
-    background-color: green;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
 }
 
-footer .contact {
-    background-color: yellow;
-    padding: 0;
-    margin: 0;
+.footer-column {
+    width: 300px;
+    margin-bottom: 1rem;
 }
 
-footer .social-media {
-    background-color: pink;
-    padding: 0;
-    margin: 0;
+.footer h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: white;
 }
 
-footer h3 {
-    margin: 0;
-    padding: auto;
-    background-color: white;
+.footer ul li {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.footer ul a li {
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+}
+
+.footer ul a li:hover {
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #E7E7E7;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.footer ul a li:focus {
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #E7E7E7;
+    opacity: 0.8;
+}
+
+.footer ul a li:active {
+    text-shadow: -2px 6px 3px #4d4d4d;
+    color: #1a4c70;
+    opacity: 1;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-copyright p {
+    text-align: center;
+    width: 100%;
+    color: white;
 }
 
 nav {

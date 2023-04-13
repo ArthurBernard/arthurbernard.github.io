@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-13 16:13:59
+* @Last Modified time: 2023-04-13 18:35:47
 */
 
 body {
@@ -43,7 +43,8 @@ footer {
     background-image: none;
     background-color: #2E3440;
     color: white;
-    padding: 2rem 0;
+    margin-top: 2rem;
+    padding: 2rem 0 1rem 0;
 }
 
 .footer-container {
@@ -51,7 +52,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .footer-column {
