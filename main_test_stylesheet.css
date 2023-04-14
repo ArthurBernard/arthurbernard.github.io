@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-14 18:47:56
+* @Last Modified time: 2023-04-14 19:13:22
 */
 
 body {
@@ -25,7 +25,6 @@ header {
     padding: 10px 0px 10px 100px;
     margin: 0;
     height: 50px;
-    background-color: pink;
 }
 
 .footer {
