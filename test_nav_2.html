@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de navigation originale</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            position: relative;
+            z-index: 100;
+        }
+
+        .nav .logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav .menu {
+            display: none;
+            cursor: pointer;
+        }
+
+        .nav .menu-items {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #0077cc;
+        }
+
+        /* Responsive menu */
+        @media (max-width: 768px) {
+            .nav .menu {
+                display: block;
+            }
+
+            .nav .menu-items {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.9);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                transition: all 0.3s ease;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .nav .menu-items.open {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            .nav .menu {
+                position: relative;
+                width: 24px;
+                height: 16px;
+            }
+
+            .nav .menu span {
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                transition: all 0.3s ease;
+            }
+
+            .nav .menu span:nth-child(1) {
+                top: 0;
+            }
+
+            .nav .menu span:nth-child(2) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .nav .menu span:nth-child(3) {
+                bottom: 0;
+            }
+
+            .nav .menu.open span:nth-child(1) {
+                top: 50%;
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            .nav .menu.open span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .nav .menu.open span:nth-child(3) {
+                top: 50%;
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menuIcon = document.querySelector('.nav .menu');
+            var menuItems = document.querySelector('.nav .menu-items');
+            menuIcon.classList.toggle('open');
+            menuItems.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="logo">Logo</a>
+        <div class="menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-items">
+            <a href="#">Accueil</a>
+            <a href="#">À propos</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+            <!-- Ajoutez d'autres liens si nécessaire -->
+        </div>
+    </nav>
+    <!-- Le reste de votre contenu ici -->
+</body>
+</html>
