@@ -8,15 +8,27 @@
         <meta name="Description" content="test_2">
         <title>Resume</title>
 
-        <!-- CSS style sheets -->
-        <link href="main_test_stylesheet.css" rel="stylesheet">
-        <link href="test_2_stylesheet.css" rel="stylesheet">
-
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+        <!-- CSS style sheets -->
+        <link href="main_test_stylesheet.css" rel="stylesheet">
+        <link href="test_2_stylesheet.css" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script>
+            function toggleMenu() {
+                var menuIcon = document.querySelector('.nav .menu');
+                var menuItems = document.querySelector('.nav .menu-items');
+                var content = document.querySelector('.content');
+                menuIcon.classList.toggle('open');
+                menuItems.classList.toggle('open');
+                content.classList.toggle('hidden');
+            }
+        </script>
     </head>
 
     <body>
@@ -26,15 +38,21 @@
             <p>My First Website !</p>
         </header>
 
-        <nav class="nav sticky">
-            <ul>
-                <li class=nav__link><a href="./index.html">Home</a></li>
-                <li class=nav__link><a href="https://github.com/ArthurBernard" target="_blank">GitHub</a></li>
-                <li class=nav__link><a href="./about.html">About me</a></li>
-                <li class=nav__link><a href="./resume.html">Resume</a></li>
-                <li class=nav__link><a href="./test.html">Test page</a></li>
-                <li class="nav__link nav__link--selected">Test 2 page</li>
-            </ul>
+        <nav class="nav">
+            <a href="#" class="logo">Logo</a>
+            <div class="menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-items">
+                <a href="./index.html">Home</a>
+                <a href="https://github.com/ArthurBernard" target="_blank">GitHub</a>
+                <a href="./about.html">About me</a>
+                <a href="./resume.html">Resume</a>
+                <a href="./test.html">Test page</a>
+                <span class="current-page">Test 2 page</span>
+            </div>
         </nav>
 
         <main class="main">
