@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-04-07 12:28:53
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-09 10:57:08
+* @Last Modified time: 2023-04-14 19:56:25
 */
 
 .disclaimer {
@@ -40,3 +40,13 @@ blockquote cite {
   color: #ccc;
 }
 
+table { /* to remove */
+    border-collapse: collapse;
+    caption-side: bottom;
+    margin: auto;
+}
+
+td, th { /* to remove */
+    border: 1px solid black;
+    padding: 15px;
+}

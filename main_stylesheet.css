@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-14 19:13:16
+* @Last Modified time: 2023-04-14 20:05:36
 */
 
 body {
@@ -97,18 +97,7 @@ header {
 
 main {
     width: 85%;
-    margin: auto;
-}
-
-table { /* to remove */
-    border-collapse: collapse;
-    caption-side: bottom;
-    margin: auto;
-}
-
-td, th { /* to remove */
-    border: 1px solid black;
-    padding: 15px;
+    margin: 0;
 }
 
 h1 {
