@@ -2,21 +2,30 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-12 00:03:39
+* @Last Modified time: 2023-04-15 12:50:13
 */
 
 /*Two columns resume*/
 .resume {
     padding: 0rem;
-    margin: 1rem 6rem 1rem 6rem;
+    /*margin: 1rem 6rem 1rem 6rem;*/
+    margin: auto;
     display: grid;
     grid-template-columns: 3fr 5fr;
-    grid-template-rows: 14rem 84rem;
+    /*grid-template-rows: 14rem 84rem;*/
+    grid-template-rows: 1fr 7fr;
     gap: 0.5rem;
     background-color: white;
     border: solid black 2px;
-    width: 85%;
+    width: 100%;
     /*height: 100rem;*/
+    max-width: 970px;
+}
+
+@media (max-width: 680px) {
+    .resume {
+        display: block;
+    }
 }
 
 .contact {
@@ -79,12 +88,18 @@
     margin-top: 2rem;
 }
 
+/******************/
+/* Core of resume */
+/******************/
+
+/* Side left with soft skills */
+
 .side-left {
     grid-column: 1;
     grid-row: 2;
-    display: grid;
-    grid-template-rows: 22rem 21rem 21rem 20rem;
-    grid-template-columns: 1fr;
+    display: block;
+    /*grid-template-rows: 22rem 21rem 21rem 20rem;
+    grid-template-columns: 1fr;*/
     margin: 0rem;
     padding: 0rem 1rem 0rem 1rem;
     background-color: #E7E7E7;
@@ -114,14 +129,20 @@ a {
     padding: 0.5rem;
 }
 
+/* Right side with hard skills */
+
 .side-right {
     grid-column: 2;
     grid-row: 2;
-    display: grid;
+    display: block;
+    /*flex-direction: column;*/
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    grid-template-rows: 21rem 22rem 21rem 20rem;
-    grid-template-columns: 1fr;
+    /*grid-template-rows: 21rem 22rem 21rem 20rem;
+    grid-template-columns: 1fr;*/
     font-size: 0.9rem;
+    margin: 0rem;
+    padding: 0rem;
+    height: auto;
 }
 
 .side-right h3 {
@@ -145,74 +166,111 @@ a {
     width: 100%;
 }
 
-.field {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
-    margin-bottom: 0.5rem;
-    height: 6rem;
+@media (min-width: 1130px) {
+    .field {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 1fr 4fr;
+        margin: 0rem;
+        padding: 0;
+        height: auto;
+        max-height: 7rem;
+        /*height: 6rem;*/
+    }
+
+    .field__date {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        font-size: 0.9rem;
+    }
+
+    .field__title {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0E5484;
+    }
+
+    .field__place {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+        font-size: 0.8 rem;
+        font-style: italic;
+    }
+
+    .field__description {
+        grid-column: 2;
+        grid-row: 2 / 4;
+        text-align: justify;
+        margin-top: 0.1rem;
+        height: auto;
+    }
 }
 
-.field__date {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    font-size: 0.9rem;
-}
+/* Responsive fields for small screen */
+@media (max-width: 1130px) {
+    .resume {
+        padding: 0rem;
+        margin: 1rem 6rem 1rem 6rem;
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        grid-template-rows: 1fr 6fr;
+        gap: 0.5rem;
+        background-color: white;
+        border: solid black 2px;
+        width: 100%;
+        /*height: 100rem;*/
+        max-width: 970px;
+    }
 
-.field__title {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #0E5484;
-}
+    .side-right {
+        grid-column: 2;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
 
-.field__place {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: right;
-    font-size: 0.8 rem;
-    font-style: italic;
-}
+    .field {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 1fr 4fr;
+        margin-bottom: 0.5rem;
+        /*height: 7rem;*/
+    }
 
-.field__description {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: justify;
-    margin-top: 0.1rem;
-}
+    .field__date {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        font-size: 0.9rem;
+    }
 
-.experience {
-    grid-row: 1;
-}
+    .field__title {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0E5484;
+    }
 
-.personnal-projects {
-    grid-row: 2;
-}
+    .field__place {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: right;
+        font-size: 0.8 rem;
+        font-style: italic;
+    }
 
-.education {
-    grid-row: 3;
-}
-
-.miscellaneous {
-    grid-row: 4;
-}
-
-.key-skill {
-    grid-row: 1;
-}
-
-.programming {
-    grid-row: 2;
-}
-
-.mooc {
-    grid-row: 3;
-}
-
-.interests {
-    grid-row: 4;
+    .field__description {
+        grid-column: 2;
+        grid-row: 3;
+        text-align: justify;
+        margin-top: 0.1rem;
+    }
 }
 
 .download {
