@@ -2,30 +2,21 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-16 17:57:57
+* @Last Modified time: 2023-04-17 12:22:35
 */
 
 /*Two columns resume*/
 .resume {
     padding: 0rem;
-    /*margin: 1rem 6rem 1rem 6rem;*/
     margin: auto;
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: 3fr 5fr;
-    /*grid-template-rows: 14rem 84rem;*/
-    grid-template-rows: 1fr 7fr;
     gap: 0.5rem;
     background-color: white;
     border: solid black 2px;
     width: 100%;
-    /*height: 100rem;*/
     max-width: 970px;
-}
-
-@media (max-width: 680px) {
-    .resume {
-        display: block;
-    }
 }
 
 .contact {
@@ -57,7 +48,7 @@
     grid-column: 2;
     grid-row: 1;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
 }
 
@@ -98,12 +89,10 @@
     grid-column: 1;
     grid-row: 2;
     display: block;
-    /*grid-template-rows: 22rem 21rem 21rem 20rem;
-    grid-template-columns: 1fr;*/
-    margin: 0rem;
-    padding: 0rem 1rem 0rem 1rem;
-    background-color: #E7E7E7;
     font-size: 1rem;
+    margin: 0rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #E7E7E7;
 }
 
 h3 {
@@ -135,10 +124,6 @@ a {
     grid-column: 2;
     grid-row: 2;
     display: block;
-    /*flex-direction: column;*/
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    /*grid-template-rows: 21rem 22rem 21rem 20rem;
-    grid-template-columns: 1fr;*/
     font-size: 0.9rem;
     margin: 0rem;
     padding: 0rem;
@@ -155,6 +140,10 @@ a {
     margin: 0.2rem;
 }
 
+.side-left .container {
+    margin-bottom: 2rem;
+}
+
 .container ul {
     padding: 0rem;
     margin-left: 0.5rem;
@@ -166,110 +155,89 @@ a {
     width: 100%;
 }
 
+.field {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.field__date {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    font-size: 0.9rem;
+}
+
+.field__title {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0E5484;
+}
+
+.field__place {
+    grid-column: 2;
+    font-size: 0.8 rem;
+    font-style: italic;
+}
+
+.field__description {
+    grid-column: 2;
+    text-align: justify;
+    margin-top: 0.1rem;
+}
+
+/* Responsive fields for large screen */
 @media (min-width: 1130px) {
     .field {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: 1fr 1fr 4fr;
         margin: 0rem;
         padding: 0;
         height: auto;
-        max-height: 7rem;
-        /*height: 6rem;*/
-    }
-
-    .field__date {
-        grid-column: 1;
-        grid-row: 1 / 4;
-        font-size: 0.9rem;
-    }
-
-    .field__title {
-        grid-column: 2;
-        grid-row: 1;
-        text-align: left;
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: #0E5484;
+        max-height: 8rem;
     }
 
     .field__place {
-        grid-column: 2;
         grid-row: 1;
         text-align: right;
-        font-size: 0.8 rem;
-        font-style: italic;
     }
 
     .field__description {
-        grid-column: 2;
         grid-row: 2 / 4;
-        text-align: justify;
-        margin-top: 0.1rem;
-        height: auto;
     }
 }
 
-/* Responsive fields for small screen */
+/* Responsive fields for medium screen */
 @media (max-width: 1130px) {
-    .resume {
-        padding: 0rem;
-        /*margin: 1rem 6rem 1rem 6rem;*/
-        display: grid;
-        grid-template-columns: 3fr 5fr;
-        grid-template-rows: 1fr 6fr;
-        gap: 0.5rem;
-        background-color: white;
-        border: solid black 2px;
-        width: 100%;
-        /*height: 100rem;*/
-        max-width: 970px;
-    }
-
-    .side-right {
-        grid-column: 2;
-        grid-row: 2;
-        display: flex;
-        flex-direction: column;
-        font-size: 0.9rem;
-    }
-
     .field {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        grid-template-rows: 1fr 1fr 4fr;
         margin-bottom: 0.5rem;
-        /*height: 7rem;*/
-    }
-
-    .field__date {
-        grid-column: 1;
-        grid-row: 1 / 4;
-        font-size: 0.9rem;
-    }
-
-    .field__title {
-        grid-column: 2;
-        grid-row: 1;
-        text-align: left;
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: #0E5484;
+        height: auto;
     }
 
     .field__place {
-        grid-column: 2;
         grid-row: 2;
         text-align: right;
-        font-size: 0.8 rem;
-        font-style: italic;
     }
 
     .field__description {
-        grid-column: 2;
         grid-row: 3;
-        text-align: justify;
-        margin-top: 0.1rem;
+    }
+}
+
+/* Responsive resume for small screen */
+@media (max-width: 740px) {
+    .resume {
+        display: block;
+    }
+}
+
+/* Responsive resume-header for very small screen */
+@media (max-width: 400px) {
+    .resume-header {
+        display: block;
+    }
+
+    .resume-header__picture {
+        margin-left: 2rem;
     }
 }
 
