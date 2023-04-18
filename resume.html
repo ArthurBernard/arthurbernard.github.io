@@ -17,6 +17,7 @@
         <!-- CSS style sheets -->
         <link href="main_stylesheet.css" rel="stylesheet">
         <link href="resume_stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="./cube.css">
 
         <!-- JavaScript -->
         <script>
@@ -39,7 +40,36 @@
         </header>
 
         <nav class="nav">
-            <a href="#" class="logo">Logo</a>
+            <!-- <div class="cube-container"> -->
+                <div class="scene">
+                    <div class="cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+                <script>
+                    var cube = document.querySelector('.cube');
+                    var scene = document.querySelector('.scene');
+
+                    document.addEventListener('mousemove', function (e) {
+                        var x = e.clientX;
+                        var y = e.clientY;
+                        var sceneRect = scene.getBoundingClientRect();
+                        var sceneCenterX = sceneRect.left + sceneRect.width / 2;
+                        var sceneCenterY = sceneRect.top + sceneRect.height / 2;
+
+                        var rotateY = (x - sceneCenterX) / sceneCenterX * 180;
+                        var rotateX = (y - sceneCenterY) / sceneCenterY * -180;
+
+                        cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+                    });
+                </script>
+            <!-- </div> -->
+            <!-- <a href="#" class="logo">Logo</a> -->
             <div class="menu" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
