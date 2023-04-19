@@ -9,8 +9,20 @@ document.addEventListener('mousemove', function (e) {
     var sceneCenterX = sceneRect.left + sceneRect.width / 2;
     var sceneCenterY = sceneRect.top + sceneRect.height / 2;
 
-    var rotateY = (x - sceneCenterX) / sceneCenterX * 180;
-    var rotateX = (y - sceneCenterY) / sceneCenterY * -180;
+    var rotateY = (x - sceneCenterX) / sceneCenterX * 15;
+    var rotateX = (y - sceneCenterY) / sceneCenterY * -15;
+
+    cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});
+
+
+document.addEventListener('scroll', (event) => {
+    var sceneRect = scene.getBoundingClientRect();
+    var sceneCenterX = sceneRect.left + sceneRect.width / 2;
+    var sceneCenterY = sceneRect.top + sceneRect.height / 2;
+
+    var rotateY = Math.random() * 360;
+    var rotateX = Math.random() * -360;
 
     cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 });
