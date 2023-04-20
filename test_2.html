@@ -23,23 +23,34 @@
             function toggleMenu() {
                 var menuIcon = document.querySelector('.nav .menu');
                 var menuItems = document.querySelector('.nav .menu-items');
-                var content = document.querySelector('.content');
+                /*var content = document.querySelector('.content');*/
                 menuIcon.classList.toggle('open');
                 menuItems.classList.toggle('open');
-                content.classList.toggle('hidden');
+                /*content.classList.toggle('hidden');*/
             }
         </script>
     </head>
 
     <body>
         <header>
-            <!-- header -->
-            <img src="./pictures/profile_picture_mini.jpeg" alt="Profile picture" title="My face">
-            <p>My First Website !</p>
+            <h1>Arthur Bernard</h1>
+            <h2>Data-Scientist and Fullstack Developer</h2>
+            <!-- <a href="#">En savoir plus</a> -->
         </header>
 
         <nav class="nav">
-            <a href="#" class="logo">Logo</a>
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+            </div>
+            <script src="./cube.js"></script>
+            <!-- <a href="#" class="logo">Logo</a> -->
             <div class="menu" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
