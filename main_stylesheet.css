@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-20 16:12:39
+* @Last Modified time: 2023-04-20 16:31:34
 */
 
 body {
@@ -202,9 +202,10 @@ a:active {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 3rem;
+    margin-bottom: 5rem;
     position: sticky;
     top: 0;
-    z-index:100
+    z-index:100;
 }
 
 .nav:hover {

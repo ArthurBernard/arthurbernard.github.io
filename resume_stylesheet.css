@@ -2,14 +2,13 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-17 07:13:44
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-17 12:22:35
+* @Last Modified time: 2023-04-20 16:31:43
 */
 
 /*Two columns resume*/
 .resume {
     padding: 0rem;
-    margin: auto;
-    margin-top: 3rem;
+    margin: 3rem auto;
     display: grid;
     grid-template-columns: 3fr 5fr;
     gap: 0.5rem;
@@ -104,7 +103,7 @@ p, li {
     color: black;
 }
 
-a {
+.resume a {
     color: #0E5484;
 }
 
@@ -246,17 +245,19 @@ a {
 }
 
 .download__button {
-    background-color: #E7E7E7;
+    background-color: rgba(231, 231, 231, 1);
     border: solid #0E5484 2px;
+    color: black;
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
     font-size: 1.2em;
+    transition: all 0.3s;
 }
 
 .download__button:hover {
-    text-shadow: -2px 6px 3px #4d4d4d;
-    color: #1a4c70;
-    opacity: 0.8;
+    color: white;
+    background: rgba(75, 121, 161, 1);
+    border: solid rgba(231, 231, 231, 1) 2px;
 }
 
