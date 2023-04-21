@@ -2,210 +2,44 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-08 16:50:38
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-04 18:20:49
+* @Last Modified time: 2023-04-21 09:27:02
 */
 
+/* Test candlestick chart */
 
-/*Two columns resume*/
-.resume {
-    padding: 1rem;
-    margin: 1rem 6rem 1rem 6rem;
-    background-color: pink;
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-template-rows: 1fr 6fr;
-    grid-gap: 0.5rem;
-    background-color: white;
-    border: solid black 2px;
-}
-
-.contact {
-    grid-column: 1;
-    grid-row: 1;
-    background-color: yellow;
-    padding: 1rem;
-}
-
-.contact li {
-    margin: 0.5rem;
-}
-
-.resume-header {
-    grid-column: 2;
-    grid-row: 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 1fr;
-    background-color: green;
-}
-
-.resume-header__title {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: purple;
-    padding-left: 1rem;
-}
-
-.resume-header__name {
-    grid-column: 1;
-    grid-row: 1;
-    background-color: red;
-    padding-left: 1rem;
-    margin-left: 0;
-}
-
-.resume-header__picture {
-    grid-column: 2;
-    grid-row: 1 / 3;
-    background-color: white;
-    border: 2px solid blue;
-    padding: 2px;
-    margin: auto;
-}
-
-.side-left {
-    grid-column: 1;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr ;
-    grid-template-columns: 1fr;
-    margin-top: 0rem;
-    background-color: skyblue;
-    font-size: 1rem;
-    height: 80rem;
-}
-
-h3 {
-    font-size: 1.6rem;
-}
-
-.side-left h3 {
-    border: 3px solid blue;
-    box-shadow: 3px 3px 0px black;
-    text-align: center;
-    margin: auto;
-    padding: 0rem;
-}
-
-.side-right {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    font-size: 0.9rem;
-    height: 80rem;
-}
-
-.container {
-    background-color: orange;
-    color: black;
-    padding: 0rem 1rem 0rem 1rem;
-    margin: 0.2rem;
-    height: 50%;
-}
-
-.container ul {
-    background-color: pink;
-    padding: 0rem;
-    margin-left: 0.5rem;
-}
-
-.container li {
-    background-color: white;
-    padding: 0rem;
-    margin: 0.5rem;
+#candlestick-chart {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
     width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 
-.field {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 5fr;
-    background-color: green;
-    margin-bottom: 0.5rem;
-    height: 23%;
+.candlestick {
+  display: inline-block;
+  position: relative;
+  margin-right: 2px;
 }
 
-.field__date {
-    grid-column: 1;
-    grid-row: 1 / 3;
-    font-size: 0.9rem;
+.candlestick.bullish {
+  background-color: green;
 }
 
-.field__title {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: left;
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: blue;
+.candlestick.bearish {
+  background-color: red;
 }
 
-.field__place {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: right;
-    font-size: 0.8 rem;
-    font-style: italic;
+.candlestick .wick {
+    display: block;
+    position: absolute;
+    width: 1px;
+    background-color: inherit;
 }
 
-.field__description {
-    grid-column: 2;
-    grid-row: 2;
-    text-align: justify;
-    margin-top: 0.1rem;
+.candlestick .body {
+    display: block;
+    position: absolute;
+    width: 5px;
+    background-color: inherit;
 }
-
-.container--red {
-    background-color: red;
-}
-
-.experience {
-    grid-row: 1;
-}
-
-.education {
-    grid-row: 2;
-}
-
-.personnal-projects {
-    grid-row: 3;
-    color: black;
-}
-
-.key-skill {
-    grid-row: 1;
-}
-
-.programming {
-    grid-row: 2;
-}
-
-.mooc {
-    grid-row: 3;
-}
-
-.interests {
-    grid-row: 4;
-}
-
-.download {
-    text-align: center;
-}
-
-.download__button {
-    background-color: #E7E7E7;
-    border: solid #0E5484 2px;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    font-size: 1.2em;
-}
-
-.download__button:hover {
-    text-shadow: -2px 6px 3px #4d4d4d;
-    color: #1a4c70;
-    opacity: 0.8;
-}
-
