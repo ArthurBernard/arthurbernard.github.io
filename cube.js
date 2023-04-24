@@ -16,13 +16,17 @@ document.addEventListener('mousemove', function (e) {
 });
 
 
-document.addEventListener('scroll', (event) => {
-    var sceneRect = scene.getBoundingClientRect();
-    var sceneCenterX = sceneRect.left + sceneRect.width / 2;
-    var sceneCenterY = sceneRect.top + sceneRect.height / 2;
-
+/*document.addEventListener('scroll', (event) => {
     var rotateY = Math.random() * 360;
     var rotateX = Math.random() * -360;
 
     cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});*/
+
+document.addEventListener('scroll', (event) => {
+    var rotateY = cube.style.transform.rotateX + 30;
+    var rotateX = cube.style.transform.rotateY - 30;
+
+    cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 });
+

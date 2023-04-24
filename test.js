@@ -21,7 +21,7 @@ const data = [
     "date": "2023-04-03",
     "open": 105,
     "close": 105,
-    "high": 100,
+    "high": 105,
     "low": 95
   },
   {
@@ -58,13 +58,16 @@ data.forEach(d => {
   wick.style.height = `${wickHeight}px`;
   body.style.height = `${bodyHeight}px`;
 
-  if (isBullish) {
+  /*if (isBullish) {
     wick.style.top = `${d.high - d.close}px`;
     body.style.top = `${d.close - d.open}px`;
   } else {
     wick.style.top = `${d.high - d.open}px`;
     body.style.top = '0';
-  }
+  }*/
+
+  wick.style.bottom = `${d.low}px`;
+  body.style.bottom = `${Math.min(d.close, d.open)}px`;
 
   candlestick.appendChild(wick);
   candlestick.appendChild(body);
