@@ -2,14 +2,10 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-20 16:31:34
+* @Last Modified time: 2023-04-26 09:31:28
 */
 
 body {
-    /*background-image: url(https://images.unsplash.com/photo-1602287389013-cb4321544a54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: bottom;*/
     background: rgba(33, 33, 33, 1);
     color: white;
     font-family: 'Ubuntu', sans-serif;
@@ -18,8 +14,6 @@ body {
 }
 
 header {
-    /*background-image: linear-gradient(rgba(255, 0, 0, 0.9), rgba(0, 0, 0, 0.9));*/
-    /*background: linear-gradient(90deg, #4B79A1, #283E51);*/
     background: linear-gradient(90deg, rgba(75, 121, 161, 0.5), rgba(40, 62, 81, 0.5));
     text-align: center;
     margin-bottom: 0;
@@ -150,50 +144,19 @@ h3, p, li {
 }
 
 a {
-    /*color: rgba(152, 188, 188, 0.5);*/
     text-decoration: none;
     font-style: italic;
 }
 
 a:hover{
-    /*color: blue;*/
     text-decoration: underline;
 }
 a:focus {
-    /*color: blue;*/
     text-decoration: underline;
 }
 a:active {
-    /*color: red*/;
     text-decoration: none;
 }
-
-.my_name { /* to remove */
-    color: blue;
-    font-weight: 700;
-}
-
-.italic {
-    font-style: italic;
-}
-
-#my_id { /* to remove */
-    color: pink;
-    font-size: 0.8em;
-}
-
-/* A B {...} // Aplly to B if B in A*/
-
-/* A + B {...} // Apply to B if B is after A*/
-
-/* A[c] {...} // Apply to A if A has c attribute */
-
-/* A[c=value] {..} // Apply to A if A has c attribute with a specified value */
-
-
-/*===============*/
-/* New from test */
-/*===============*/
 
 .nav {
     background: linear-gradient(90deg, rgba(75, 121, 161, 0.5), rgba(40, 62, 81, 0.5));
@@ -234,7 +197,6 @@ a:active {
 
 .nav a {
     text-decoration: none;
-    /*color: white;*/
     color: inherit;
     font-weight: bold;
     font-size: 1.4rem;
