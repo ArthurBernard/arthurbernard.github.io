@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-26 09:31:28
+* @Last Modified time: 2023-04-26 16:40:23
 */
 
 body {
@@ -118,7 +118,7 @@ header a:hover {
 
 main {
     width: 85%;
-    margin: 0;
+    margin: auto;
 }
 
 h1 {
@@ -136,7 +136,7 @@ h2 {
 }
 
 h3, p, li {
-    color: yellow;
+    color: white;
     font-size: 1.1em;
     font-family: 'Ubuntu', sans-serif;
     text-align: justify;
@@ -146,6 +146,7 @@ h3, p, li {
 a {
     text-decoration: none;
     font-style: italic;
+    color: inherit;
 }
 
 a:hover{
