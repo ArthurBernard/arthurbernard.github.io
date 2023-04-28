@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-28 11:20:58
+* @Last Modified time: 2023-04-28 11:39:16
 */
 
 body {
@@ -45,13 +45,6 @@ header a {
 
 header a:hover {
     background-color: #005fa3;
-}
-
-.language_flag {
-    box-align: right;
-    /*border: 2px solid black;*/
-    padding: 0 1rem;
-    margin-right: 0;
 }
 
 .footer {
