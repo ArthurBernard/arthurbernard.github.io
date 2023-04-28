@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="ArthurBernard">
         <meta name="Keywords" content="website, Arthur, Bernard">
-        <meta name="Description" content="index">
+        <meta name="Description" content="index_fr">
         <title>Home</title>
 
         <!-- CSS style sheets -->
-        <link href="index_stylesheet.css" rel="stylesheet">
-        <link href="main_stylesheet.css" rel="stylesheet">
-        <link rel="stylesheet" href="./cube.css">
+        <link href="../index_stylesheet.css" rel="stylesheet">
+        <link href="../main_stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="../cube.css">
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
     <body>
         <header>
             <h1>Arthur Bernard</h1>
-            <h2>Data-Scientist and Fullstack Developer</h2>
+            <h2>Data-Scientiste et Developpeur Fullstack</h2>
             <!-- <a href="#">En savoir plus</a> -->
         </header>
 
@@ -50,7 +50,7 @@
                     <div class="cube-face bottom"></div>
                 </div>
             </div>
-            <script src="./cube.js"></script>
+            <script src="../cube.js"></script>
             <!-- <a href="#" class="logo">Logo</a> -->
             <div class="menu" onclick="toggleMenu()">
                 <span></span>
@@ -58,55 +58,42 @@
                 <span></span>
             </div>
             <div class="menu-items">
-                <span class="current-page">Home</span>
+                <span class="current-page">Acceuil</span>
                 <a href="https://github.com/ArthurBernard" target="_blank">GitHub</a>
-                <a href="./about.html">About</a>
-                <a href="./resume.html">Resume</a>
-                <a href="./test.html">Test page</a>
-                <a href="./test_2.html">Test page 2</a>
-                <a class=flag_language href="./fr/index_fr.html"><img class="language_flag" src="./icons/france_flag_36x36_icons8.png"></a>
-                <!-- <a target="_blank" href="https://icons8.com/icon/15497/france">France</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                <a href="./about_fr.html">A propos</a>
+                <a href="../resume.html">CV</a>
+                <a href="../test.html">Page test</a>
+                <a href="../test_2.html">Page test 2</a>
+                <a class=flag_language href="../index.html"><img class="language_flag" src="../icons/great_britain_flag_36x36_icons8.png"></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/15534/great-britain">Great Britain</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
             </div>
         </nav>
 
         <main>
             <section class="welcome-section">
-                <p>As an experienced Python developer with a strong background in time series data science, I am excited to offer my services as a freelance full-stack developer and data scientist. With my expertise in Python programming, data manipulation, and machine learning, I can help you develop and deploy data-driven applications that solve your business problems. I am also proficient in front-end technologies like HTML, CSS, and JavaScript, which enables me to create modern and responsive user interfaces that enhance the user experience.</p>
+                <p>En tant que développeur full stack freelance, je crée des solutions web et d'applications personnalisées en combinant des interfaces utilisateur élégantes avec des systèmes back-end robustes, grâce à ma maîtrise de technologies telles que HTML, CSS, JavaScript et Python.</p>
 
-                <p>Whether you need a full-stack developer to build your web application or a data scientist to extract insights from your data, I am confident that I can deliver high-quality work that meets your needs. Please feel free to reach out to me to discuss how I can help you with your project.</p>
+                <p>D'un autre côté, en tant que data scientist expérimenté spécialisé dans les séries temporelles, j'ai travaillé sur des projets notables qui illustrent mon expertise. Sur GitHub, vous pouvez consulter mes réalisations, telles que Fynance, une bibliothèque Python dédiée à la finance quantitative, et Trading_Bot, un projet visant à créer un bot de trading algorithmique pour les crypto-monnaies.</p>
+
+                <p>En tant que développeur full stack freelance et data scientist, je propose également d'intégrer des solutions d'intelligence artificielle, telles que ChatGPT, au sein de vos équipes. En incorporant un assistant IA dans votre organisation, vous pouvez automatiser des tâches récurrentes, rédiger des brouillons, effectuer des recherches et bien plus encore, améliorant ainsi la productivité et l'efficacité de votre équipe.</p>
+
+                <p>Faites confiance à mon approche collaborative et adaptative pour créer des solutions innovantes et performantes qui répondent à vos besoins spécifiques, que ce soit en développement full stack ou en science des données.</p>
             </section>
-
-            <!-- <section>
-                <form action="" method="get">
-                    <fieldset>
-                        <legend>Contact</legend>
-                        <label for="first_name_1">First name</label>
-                        <input type="text" name="first name" id="first_name_1" placeholder="Write your first name here.." maxlength="32">
-                        <label for="email_1">Email address</label>
-                        <input type="email" name="email" id="email 1">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Comment</legend>
-                        <textarea name="comment" id="comment_1" placeholder="Write your comment here.." maxlength="512" cols="40" rows="4"></textarea>
-                    </fieldset>
-                    <p><input type="submit" value="Send"></p>
-                </form>
-            </section> -->
 
             <!-- ChatGPT -->
             <section>
-                <h2>Contact Form</h2>
+                <h2>Me contacter</h2>
                 <form id="contact-form">
-                    <label for="name">Name:</label>
+                    <label for="name">Nom:</label>
                     <input type="text" id="name" name="name" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="comment">Comment:</label>
+                    <label for="comment">Commentaire:</label>
                     <textarea id="comment" name="comment" rows="4" required></textarea>
 
-                    <button type="submit">Submit</button>
+                    <button type="submit">Envoyer</button>
                 </form>
             </section>
         </main>
@@ -114,26 +101,26 @@
         <footer class="footer">
             <div class="footer-container">
                 <div class="footer-column">
-                    <h3>Social Media</h3>
+                    <h3>Réseaux sociaux</h3>
                     <ul>
-                        <a href="https://www.linkedin.com/in/arthur-bernard-789955152/"><li style="list-style-image: url('./icons/linkedin_24x24_icons8.png')">LinkedIn</li></a>
+                        <a href="https://www.linkedin.com/in/arthur-bernard-789955152/"><li style="list-style-image: url('../icons/linkedin_24x24_icons8.png')">LinkedIn</li></a>
                         <!-- <a target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-                        <a href="https://github.com/ArthurBernard"><li style="list-style-image: url('./icons/github_24x24_icons8.png')">GitHub</li></a>
+                        <a href="https://github.com/ArthurBernard"><li style="list-style-image: url('../icons/github_24x24_icons8.png')">GitHub</li></a>
                         <!-- <a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul>
-                        <li style="list-style-image: url('./icons/phone_24x24_icons8.png')">+33 6 59 29 14 50</li>
+                        <li style="list-style-image: url('../icons/phone_24x24_icons8.png')">+33 6 59 29 14 50</li>
                         <!-- <a target="_blank" href="https://icons8.com/icon/59815/iphone-se">iPhone SE</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
-                        <a href="mailto:arthur.bernard.92@gmail.com"><li style="list-style-image: url('./icons/gmail_24x24_icons8.png')">arthur.bernard.92@gmail.com</li></a>
+                        <a href="mailto:arthur.bernard.92@gmail.com"><li style="list-style-image: url('../icons/gmail_24x24_icons8.png')">arthur.bernard.92@gmail.com</li></a>
                         <!-- <a target="_blank" href="https://icons8.com/icon/37246/gmail-logo">Gmail Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
                     </ul>
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>&copy; 2023 My first web site | All rights reserved</p>
+                <p>&copy; 2023 My first web site | Tous droits réservés</p>
             </div>
         </footer>
     </body>
