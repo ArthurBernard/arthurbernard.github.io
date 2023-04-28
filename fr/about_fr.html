@@ -3,55 +3,113 @@
     <head>
         <meta charset="utf-8">
         <meta name="author" content="ArthurBernard">
-        <meta name="Keywords" content="about me, Arthur, Bernard">
+        <meta name="Keywords" content="a propos, Arthur, Bernard">
         <meta name="Description" content="about_fr">
-        <title>About me</title>
+        <title>A propos</title>
 
         <!-- CSS style sheets -->
-        <link href="main_stylesheet.css" rel="stylesheet">
-        <link href="about_stylesheet.css" rel="stylesheet">
+        <link href="../main_stylesheet.css" rel="stylesheet">
+        <link href="../about_stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="../cube.css">
 
         <!-- Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script>
+            function toggleMenu() {
+                var menuIcon = document.querySelector('.nav .menu');
+                var menuItems = document.querySelector('.nav .menu-items');
+                /*var content = document.querySelector('.content');*/
+                menuIcon.classList.toggle('open');
+                menuItems.classList.toggle('open');
+                /*content.classList.toggle('hidden');*/
+            }
+        </script>
     </head>
 
     <body>
         <header>
-            <!-- header -->
-            <img src="./pictures/profile_picture_mini.jpeg" alt="Profile picture" title="My face">
-            <p>My First Website !</p>
+            <h1>Arthur Bernard</h1>
+            <h2>Data-Scientiste et Developpeur Fullstack</h2>
+            <!-- <a href="#">En savoir plus</a> -->
         </header>
 
-        <nav class="nav sticky">
-            <ul>
-                <li class=nav__link><a href="./index.html">Home</a></li>
-                <li class=nav__link><a href="https://github.com/ArthurBernard" target="_blank">GitHub</a></li>
-                <li class="nav__link nav__link--selected">About me</li>
-                <li class="nav__link"><a href=./resume.html>Resume</a></li>
-                <li class=nav__link><a href="./test.html">Test page</a></li>
-                <li class=nav__link><a href="./test_2.html">Test 2 page</a></li>
-            </ul>
+        <nav class="nav">
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+            </div>
+            <script src="../cube.js"></script>
+            <!-- <a href="#" class="logo">Logo</a> -->
+            <div class="menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-items">
+                <a href="./index_fr.html">Acceuil</a>
+                <a href="https://github.com/ArthurBernard" target="_blank">GitHub</a>
+                <span class="current-page">A propos</span>
+                <a href="../resume.html">CV</a>
+                <a href="../test.html">Page test</a>
+                <a href="../test_2.html">Page test 2</a>
+                <a class=flag_language href="../about.html"><img class="language_flag" src="../icons/great_britain_flag_36x36_icons8.png"></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/15534/great-britain">Great Britain</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
         </nav>
 
         <main>
-            <h3>Presentation par ChatGPT</h3>
-            <p>Arthur Bernard est un développeur français travaillant principalement sur des projets de finance quantitative et d'apprentissage automatique. Il est l'auteur de plusieurs projets open source, notamment le package Python "Fynance", qui fournit des outils d'analyse financière et de modélisation, ainsi que des exemples d'utilisation pour des modèles tels que les modèles ARCH, GARCH et les réseaux de neurones.</p>
+            <section>
+                <h2>Presentation par ChatGPT</h2>
+                <p class=disclaimer><u>Attention:</u> <i>La citation suivante est générée automatiquement par ChatGPT-3, elle est sujette à des erreurs récurrentes, par exemple un nom de diplôme ou d'université erroné. En effet, ChatGPT ne me connaît pas personnellement, mais il extrapole à partir du code que j'ai produit sur GitHub.</i></p>
 
-            <p>En plus de "Fynance", Arthur Bernard est également l'auteur du projet "Trading Bot", un bot de trading automatisé utilisant des techniques d'apprentissage automatique et de finance quantitative. Il a également créé le projet "Download_Crypto_Currencies_Data", qui fournit des scripts pour télécharger des données de prix de différentes cryptomonnaies à partir de différentes bourses.</p>
+                <blockquote>
+                    <p>Arthur Bernard est un développeur français travaillant principalement sur des projets de finance quantitative et d'apprentissage automatique. Il est l'auteur de plusieurs projets open source, notamment le package Python "Fynance", qui fournit des outils d'analyse financière et de modélisation, ainsi que des exemples d'utilisation pour des modèles tels que les modèles ARCH, GARCH et les réseaux de neurones.</p>
 
-            <p>Sur son profil GitHub, Arthur Bernard partage également des projets personnels, tels que des modèles de CV et des scripts pour automatiser des tâches courantes sur son ordinateur.</p>
+                    <p>En plus de "Fynance", Arthur Bernard est également l'auteur du projet "Trading Bot", un bot de trading automatisé utilisant des techniques d'apprentissage automatique et de finance quantitative. Il a également créé le projet "Download_Crypto_Currencies_Data", qui fournit des scripts pour télécharger des données de prix de différentes cryptomonnaies à partir de différentes bourses.</p>
 
-            <p>En termes de centres d'intérêt, Arthur Bernard semble passionné par la finance, l'apprentissage automatique et l'informatique en général. Ses projets sur GitHub montrent un intérêt particulier pour l'application de techniques d'apprentissage automatique à la finance et la création d'outils pour simplifier les tâches répétitives et fastidieuses.</p>
+                    <p>Sur son profil GitHub, Arthur Bernard partage également des projets personnels, tels que des modèles de CV et des scripts pour automatiser des tâches courantes sur son ordinateur.</p>
+
+                    <p>En termes de centres d'intérêt, Arthur Bernard semble passionné par la finance, l'apprentissage automatique et l'informatique en général. Ses projets sur GitHub montrent un intérêt particulier pour l'application de techniques d'apprentissage automatique à la finance et la création d'outils pour simplifier les tâches répétitives et fastidieuses.</p>
+                </blockquote>
+                <title>ChatGPT-3</title>
+            </section>
         </main>
 
-        <footer>
-            <!-- footer -->
-            <a href="https://github.com/ArthurBernard" target="_blank">My GitHub account</a>
-            <a href="mailto:myaddress@mail.com">My e-mail</a>
-            <a href="./index.html">My website</a>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Réseaux sociaux</h3>
+                    <ul>
+                        <a href="https://www.linkedin.com/in/arthur-bernard-789955152/"><li style="list-style-image: url('../icons/linkedin_24x24_icons8.png')">LinkedIn</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="https://github.com/ArthurBernard"><li style="list-style-image: url('../icons/github_24x24_icons8.png')">GitHub</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="list-style-image: url('../icons/phone_24x24_icons8.png')">+33 6 59 29 14 50</li>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/59815/iphone-se">iPhone SE</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="mailto:arthur.bernard.92@gmail.com"><li style="list-style-image: url('../icons/gmail_24x24_icons8.png')">arthur.bernard.92@gmail.com</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/37246/gmail-logo">Gmail Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 My first web site | Tous droits réservés</p>
+            </div>
         </footer>
     </body>
 </html>

@@ -2,7 +2,7 @@
 * @Author: ArthurBernard
 * @Date:   2023-03-01 19:16:37
 * @Last Modified by:   ArthurBernard
-* @Last Modified time: 2023-04-26 16:40:23
+* @Last Modified time: 2023-04-28 11:20:58
 */
 
 body {
@@ -45,6 +45,13 @@ header a {
 
 header a:hover {
     background-color: #005fa3;
+}
+
+.language_flag {
+    box-align: right;
+    /*border: 2px solid black;*/
+    padding: 0 1rem;
+    margin-right: 0;
 }
 
 .footer {
@@ -219,6 +226,11 @@ a:active {
 .nav a:active {
     background-color: #1a4c70;
     text-decoration: none;
+}
+
+.nav .flag_language {
+    padding: 0;
+    margin: 0;
 }
 
 /* Current web page displayed */
