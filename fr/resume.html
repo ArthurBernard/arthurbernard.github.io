@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="ArthurBernard">
+        <meta name="Keywords" content="resume, cv, Arthur, Bernard">
+        <meta name="Description" content="resume">
+        <title>Resume</title>
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+        <!-- CSS style sheets -->
+        <link href="../main_stylesheet.css" rel="stylesheet">
+        <link href="../resume_stylesheet.css" rel="stylesheet">
+        <link rel="stylesheet" href="../cube.css">
+
+        <!-- JavaScript -->
+        <script>
+            function toggleMenu() {
+                var menuIcon = document.querySelector('.nav .menu');
+                var menuItems = document.querySelector('.nav .menu-items');
+                /*var content = document.querySelector('.content');*/
+                menuIcon.classList.toggle('open');
+                menuItems.classList.toggle('open');
+                /*content.classList.toggle('hidden');*/
+            }
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Arthur Bernard</h1>
+            <h2>Data-Scientist et Développeur Fullstack</h2>
+            <!-- <a href="#">En savoir plus</a> -->
+        </header>
+
+        <nav class="nav">
+            <div class="scene">
+                <div class="cube">
+                    <div class="cube-face front"></div>
+                    <div class="cube-face right"></div>
+                    <div class="cube-face back"></div>
+                    <div class="cube-face left"></div>
+                    <div class="cube-face top"></div>
+                    <div class="cube-face bottom"></div>
+                </div>
+            </div>
+            <script src="./cube.js"></script>
+            <!-- <a href="#" class="logo">Logo</a> -->
+            <div class="menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-items">
+                <a href="./index.html">Accueil</a>
+                <a href="https://github.com/ArthurBernard" target="_blank">GitHub</a>
+                <a href="./about.html">A propos</a>
+                <span class="current-page">CV</span>
+                <a href="./test.html">Page test</a>
+                <a href="./test_2.html">Page test 2</a>
+                <a class=flag_language href="../resume.html"><img src="../icons/great_britain_flag_36x36_icons8.png"></a>
+                <!-- <a target="_blank" href="https://icons8.com/icon/15497/france">France</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+            </div>
+        </nav>
+
+        <main class="main" style="margin: auto">
+            <div class="resume">
+                <div class='resume-header'>
+                    <img class="resume-header__picture" src="./pictures/qrcode_github_mini.jpeg" alt="Resume picture" title="Resume picture">
+                    <h1 class="resume-header__name">Arthur Bernard</h1>
+                    <h2 class="resume-header__title">Data Scientist and Developer</h2>
+                </div>
+
+                <div class="contact">
+                    <ul>
+                        <li style="list-style-image: url('./icons/phone_24x24_icons8.png')">+33 6 59 29 14 50</li>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/59815/iphone-se">iPhone SE</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="mailto:arthur.bernard.92@gmail.com"><li style="list-style-image: url('./icons/gmail_24x24_icons8.png')">arthur.bernard.92@gmail.com</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/37246/gmail-logo">Gmail Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="https://www.linkedin.com/in/arthur-bernard-789955152/"><li style="list-style-image: url('./icons/linkedin_24x24_icons8.png')">/in/arthur-bernard-789955152</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="https://github.com/ArthurBernard"><li style="list-style-image: url('./icons/github_24x24_icons8.png')">/GitHub/ArthurBernard</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="./index.html"><li style="list-style-image: url('./icons/internet_24x24_icons8.png')">Website</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/103413/internet">Internet</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </ul>
+                </div>
+
+                <div class="side-left">
+                    <section class="container">
+                        <h3>Key skills</h3>
+                        <ul>
+                            <li>Proficiency in statistics & econometrics softwares: R (Advanced), Octave/Matlab (Advanced), SAS (Beginner), STATA (Beginner).</li>
+                            <li>Operating systems: Unix and Windows</li>
+                            <li>Languages: French (native speaker), English (professional level).</li>
+                            <li>Databases: Basic knowledged of SQL, MDX and Hadoop.</li>
+                        </ul>
+                    </section>
+
+                    <section class="container">
+                        <h3>Programming</h3>
+                        <ul>
+                            <li>Higly advanced: Python (expertise in NumPy, Pandas, Cython, PyTorch, Keras, Sickit-Learn, Asyncio, Mullti-process/thread, etc).</li>
+                            <li>Advanced: Shell, VBA, LaTeX.</li>
+                            <li>In progress: C++, HTML, CSS and JavaScript.</li>
+                        </ul>
+                    </section>
+
+                    <section class="container">
+                        <h3>MOOC's</h3>
+                        <ul>
+                            <li>Learn to program with Python, on OpenClassRooms.</li>
+                            <li>Machine Learning, Stanford University course by Andrew Ng, on Coursera.</li>
+                            <li>And other diverse courses about Linux, C++, HTML & CSS, JavaScript, etc.</li>
+                        </ul>
+                    </section>
+
+                    <section class="container">
+                        <h3>Interests</h3>
+                        <ul>
+                            <li>Artificial intelligence.</li>
+                            <li>Programming.</li>
+                            <li>Crypto-currencies/Blockchains.</li>
+                            <li>Open source projects.</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="side-right">
+                    <section class="container">
+                        <h3><span style="color:#1a4c70">Exp</span>eriences</h3>
+                        <div class="field">
+                            <span class="field__title">Data Scientist</span><span class="field__date">Mar. 2020 - Sep. 2021</span><span class="field__place">at Coperneec, Paris</span><span class="field__description">For Natixis in Risk Management Department in the Market Stress Test team: automation of recurent tasks, R&D on reverse stress test methodology, fast pricing of products, python package to manage data across different internal data sources, etc.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__title">Quant Research</span><span class="field__date">Jan. 2019 - Oct. 2019</span><span class="field__place">at Napoleaon Group, Paris</span><span class="field__description">R&D of trading strategies, multivariate prediction with neural networds, execution order algorithms, development of backtesting and financial analysis tools, and webscraping data.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">Jun. 2018 – Dec. 2018</span><span class="field__title">Intern in Quantitative Finance</span><span class="field__place">at Napoleon Group, Paris</span><span class="field__description">Research of quantitative strategies and portfolio allocation algorithms. Data-science competition elaborated for the ENS.</span>
+                        </div>
+                    </section>
+
+                    <section class="container">
+                        <h3><span style="color:#1a4c70">Per</span>sonnal projects</h3>
+                        <div class="field">
+                            <span class="field__title">Machine/deep learning tools adapted to finance</span><span class="field__date">2018 - 2019</span><span class="field__description">Development of a Pythn and Cython package to create neural networks, backest strategies, analysis with econometric models and financial indicators, etc. Published on PyPI as <a href="https://github.com/ArthurBernard/Fynance">fynance</a>.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">2017 – 2018</span><span class="field__title">Webscraping package</span><span class="field__description">Development of a Python package to download data and update database from some crypto-currency exchanges. Published on PyPI as <a href="https://github.com/ArthurBernard/Download_Crypto_Currencies_Data">dccd</a>.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">2016 – 2020</span><span class="field__title">Trading bot algorithms on crypto-currencies</span><span class="field__description">Development and maintenance of trading bots with Python and Bash scripts. Starting in 2016 with arbitrage strategy, and more recently create strategies with neural network. Partly available on my GitHub in the repository <a href="https://github.com/ArthurBernard/Trading_Bot">Trading_Bot</a>.</span>
+                        </div>
+                    </section>
+
+                    <section class="container">
+                        <h3><span style="color:#1a4c70">Edu</span>cation</h3>
+                        <div class="field">
+                            <span class="field__date">2017 – 2018</span><span class="field__title">Master's Degree</span><span class="field__place">at Aix-Marseille School of Economics, Marseille</span><span class="field__description"><b>Econometrics of Banking and Financial markets</b><br>
+                            Courses: Stochastic finance, financial econometrics, financial engineering, econometrics of exchange rates, neural network, etc.<br>
+                            Projects: Intraday analysis of BTCUSD versus EURUSD, etc.
+                            Master thesis: Analysis of dynamics of Bitcoin.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">2013 – 2016</span><span class="field__title">Bachelor's degree</span><span class="field__place">at Aix-Marseille University, Marseille</span><span class="field__description"><b>Economics and Management</b><br>
+                            Specialization: Finance.
+                            Courses: Time series econometrics, financial markets, statistics, optimization, informatics (SQL and VBA), etc.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">2012</span><span class="field__title">A-Level - Science</span><span class="field__place">at High-School M. M. Fourcade, Gardanne</span>
+                        </div>
+                    </section>
+
+                    <section class="container">
+                        <h3><span style="color:#1a4c70">Mis</span>cellaneous</h3>
+                        <div class="field">
+                            <span class="field__date">2019</span><span class="field__title">Data-science competition</span><span class="field__place">at ENS Challenge Data</span><span class="field__description"><a href="http://datachallenge.cfm.fr/t/end-of-year-ranking-2019-official-top-10/243">6th place</a> out of more than 100 competitors, about prediction of daily stock movements on the US market, proposed by Capital Fund Management.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">2014 – 2016</span><span class="field__title">Founder and general secretary of student association</span><span class="field__description">Organisation and management of team projects.</span>
+                        </div>
+
+                        <div class="field">
+                            <span class="field__date">Present</span><span class="field__title">Hobbies</span><span class="field__description">Cooking, travelling (Norway, Scotland, Eastern countries, etc.), swimming (competition) and theater.</span>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class=download>
+                <a href="./pdf_files/Arthur_Bernard_CV_En.pdf"><button class="download__button">Download as pdf</button></a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Social Media</h3>
+                    <ul>
+                        <a href="https://www.linkedin.com/in/arthur-bernard-789955152/"><li style="list-style-image: url('./icons/linkedin_24x24_icons8.png')">LinkedIn</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="https://github.com/ArthurBernard"><li style="list-style-image: url('./icons/github_24x24_icons8.png')">GitHub</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/106562/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li style="list-style-image: url('./icons/phone_24x24_icons8.png')">+33 6 59 29 14 50</li>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/59815/iphone-se">iPhone SE</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                        <a href="mailto:arthur.bernard.92@gmail.com"><li style="list-style-image: url('./icons/gmail_24x24_icons8.png')">arthur.bernard.92@gmail.com</li></a>
+                        <!-- <a target="_blank" href="https://icons8.com/icon/37246/gmail-logo">Gmail Logo</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 My first web site | All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>

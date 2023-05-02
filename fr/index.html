@@ -2,14 +2,15 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="ArthurBernard">
-        <meta name="Keywords" content="a propos, Arthur, Bernard">
-        <meta name="Description" content="about_fr">
-        <title>A propos</title>
+        <meta name="Keywords" content="website, Arthur, Bernard">
+        <meta name="Description" content="index">
+        <title>Home</title>
 
         <!-- CSS style sheets -->
+        <link href="../index_stylesheet.css" rel="stylesheet">
         <link href="../main_stylesheet.css" rel="stylesheet">
-        <link href="../about_stylesheet.css" rel="stylesheet">
         <link rel="stylesheet" href="../cube.css">
 
         <!-- Font -->
@@ -34,7 +35,7 @@
     <body>
         <header>
             <h1>Arthur Bernard</h1>
-            <h2>Data-Scientiste et Developpeur Fullstack</h2>
+            <h2>Data-Scientist et Développeur Fullstack</h2>
             <!-- <a href="#">En savoir plus</a> -->
         </header>
 
@@ -57,33 +58,44 @@
                 <span></span>
             </div>
             <div class="menu-items">
-                <a href="./index_fr.html">Acceuil</a>
+                <span class="current-page">Accueil</span>
                 <a href="https://github.com/ArthurBernard" target="_blank">GitHub</a>
-                <span class="current-page">A propos</span>
-                <a href="../resume.html">CV</a>
-                <a href="../test.html">Page test</a>
-                <a href="../test_2.html">Page test 2</a>
-                <a class=flag_language href="../about.html"><img src="../icons/great_britain_flag_36x36_icons8.png"></a>
+                <a href="./about.html">A propos</a>
+                <a href="./resume.html">CV</a>
+                <a href="./test.html">Page test</a>
+                <a href="./test_2.html">Page test 2</a>
+                <a class=flag_language href="../index.html"><img src="../icons/great_britain_flag_36x36_icons8.png"></a>
                 <!-- <a target="_blank" href="https://icons8.com/icon/15534/great-britain">Great Britain</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
             </div>
         </nav>
 
         <main>
-            <section>
-                <h2>Presentation par ChatGPT</h2>
-                <p class=disclaimer><u>Attention:</u> <i>La citation suivante est générée automatiquement par ChatGPT-3, elle est sujette à des erreurs récurrentes, par exemple un nom de diplôme ou d'université erroné. En effet, ChatGPT ne me connaît pas personnellement, mais il extrapole à partir du code que j'ai produit sur GitHub.</i></p>
+            <section class="welcome-section">
+                <p>En tant que développeur full stack freelance, je crée des solutions web et d'applications personnalisées en combinant des interfaces utilisateur élégantes avec des systèmes back-end robustes, grâce à ma maîtrise de technologies telles que HTML, CSS, JavaScript et Python.</p>
 
-                <blockquote>
-                    <p>Arthur Bernard est un développeur français travaillant principalement sur des projets de finance quantitative et d'apprentissage automatique. Il est l'auteur de plusieurs projets open source, notamment le package Python "Fynance", qui fournit des outils d'analyse financière et de modélisation, ainsi que des exemples d'utilisation pour des modèles tels que les modèles ARCH, GARCH et les réseaux de neurones.</p>
+                <p>D'un autre côté, en tant que data scientist expérimenté spécialisé dans les séries temporelles, j'ai travaillé sur des projets notables qui illustrent mon expertise. Sur GitHub, vous pouvez consulter mes réalisations, telles que Fynance, une bibliothèque Python dédiée à la finance quantitative, et Trading_Bot, un projet visant à créer un bot de trading algorithmique pour les crypto-monnaies.</p>
 
-                    <p>En plus de "Fynance", Arthur Bernard est également l'auteur du projet "Trading Bot", un bot de trading automatisé utilisant des techniques d'apprentissage automatique et de finance quantitative. Il a également créé le projet "Download_Crypto_Currencies_Data", qui fournit des scripts pour télécharger des données de prix de différentes cryptomonnaies à partir de différentes bourses.</p>
+                <p>En tant que développeur full stack freelance et data scientist, je propose également d'intégrer des solutions d'intelligence artificielle, telles que ChatGPT, au sein de vos équipes. En incorporant un assistant IA dans votre organisation, vous pouvez automatiser des tâches récurrentes, rédiger des brouillons, effectuer des recherches et bien plus encore, améliorant ainsi la productivité et l'efficacité de votre équipe.</p>
 
-                    <p>Sur son profil GitHub, Arthur Bernard partage également des projets personnels, tels que des modèles de CV et des scripts pour automatiser des tâches courantes sur son ordinateur.</p>
-
-                    <p>En termes de centres d'intérêt, Arthur Bernard semble passionné par la finance, l'apprentissage automatique et l'informatique en général. Ses projets sur GitHub montrent un intérêt particulier pour l'application de techniques d'apprentissage automatique à la finance et la création d'outils pour simplifier les tâches répétitives et fastidieuses.</p>
-                </blockquote>
-                <title>ChatGPT-3</title>
+                <p>Faites confiance à mon approche collaborative et adaptative pour créer des solutions innovantes et performantes qui répondent à vos besoins spécifiques, que ce soit en développement full stack ou en science des données.</p>
             </section>
+
+            <!-- ChatGPT -->
+            <!-- <section>
+                <h2>Me contacter</h2>
+                <form id="contact-form">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="comment">Commentaire:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section> -->
         </main>
 
         <footer class="footer">
